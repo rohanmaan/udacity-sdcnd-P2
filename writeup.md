@@ -161,7 +161,8 @@ Here are the results of the prediction:
 | Priority road				| Priority road      							|
 | Keep right				| Keep right      								|
 
-
+The model got 9 out of 10 of the signs correct. The accuracy on the captured images is 90% while it was 93.4% on the testing set thus It seems the model is little overfitting
+.
 We notice that the correct predictions had a huge confidence, very close to 100%, which is very positive.
 
 The only missclasiffied image was the 30 km/h speed sign, so the network did not learn the numbers very well. However we can observe the top 5 probabilities and realize that the network was not that far anyway, since the correct option is the second with highest probability. In addition, all the top-5 outputs are speed limits, so at least the network learnt that.
